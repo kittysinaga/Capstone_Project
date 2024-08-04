@@ -2,7 +2,7 @@
 The project is my capstone project for CODE:You. The project analyzes 3 socioeconomic factors across 50 US states, school quality, mean income, and mental health, in year 2023.  The objective is to deduce rankings of those factors, to help determine which areas are most attractive to live in.
 
 # DATA
-### The dataset used in this project contains information about school quality, school safety, income by occupation, mental health indicators (i.e. depressive and anxiety factors) across all 50 states and District of Columbia.
+The dataset used in this project contains information about school quality, school safety, income by occupation, mental health indicators (i.e. depressive and anxiety factors) across all 50 states and District of Columbia.
 
 ### Data 1 - Schools - https://scholaroo.com/report/state-education-rankings/ 
 This dataset already has the schools ranked based on Student Success, Student Safety, and School Quality variables for year 2023.
@@ -31,21 +31,23 @@ Visualizations :  Tableau dashboard
 | Utilize a virtual environment |	Made a venv for this project to keep my computer clean |
 | Notate your code with markdown cells in Jupyter Notebook | Included in my code, you will find notes describing each code block |
 
-Getting Started
+# Getting Started
 To run this project, follow these steps:
 
-Clone the repository: git clone https://github.com/your-username/your-project.git
+Clone the repository: git clone https://github.com/kittysinaga/Capstone_Project
 Install the necessary dependencies: pip install -r requirements.txt
-Explore the Jupyter notebooks or scripts in the respective folders.
-Dependencies
+Explore the Jupyter notebooks or scripts in the respective folders
+
+# Dependencies
 List any dependencies or libraries used in the project.
 
-Virtual Environment Instructions
-After you have cloned the repo to your machine, navigate to the project folder in GitBash/Terminal.
-Create a virtual environment in the project folder.
-Activate the virtual environment.
-Install the required packages.
-When you are done working on your repo, deactivate the virtual environment.
+## Virtual Environment Instructions
+1. After you have cloned the repo to your machine, navigate to the project folder in GitBash/Terminal.
+2. Create a virtual environment in the project folder.
+3. Activate the virtual environment.
+4. Install the required packages.
+5. When you are done working on your repo, deactivate the virtual environment.
+
 Virtual Environment Commands
 
 Command	Linux/Mac	GitBash

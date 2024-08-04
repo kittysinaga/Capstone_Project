@@ -1,0 +1,891 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0515.0324                               -->
+<workbook original-version='18.1' source-build='2024.1.3 (20241.24.0515.0324)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='CapstoneProject-KittySinaga' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Bottom 10 states mental health 1' datatype='integer' name='[Parameter 1 1]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+        <calculation class='tableau' formula='10' />
+        <range max='10' min='1' />
+      </column>
+      <column caption='Top 10 states mental health' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+        <calculation class='tableau' formula='10' />
+        <range max='10' min='1' />
+      </column>
+    </datasource>
+    <datasource caption='Rankings (Rankings)' inline='true' name='federated.13bhkah0x05u38104fwzg17n0b3p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Rankings' name='excel-direct.0jirz3w1rcfz5o10bjq3l1ufpsva'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/kitty/OneDrive/Rankings.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0jirz3w1rcfz5o10bjq3l1ufpsva' name='Rankings' table='[Rankings$]' type='table'>
+          <columns gridOrigin='A1:E51:no:A1:E51:0' header='yes' outcome='6'>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='integer' name='School Ranking' ordinal='1' />
+            <column datatype='integer' name='Mental Health Ranking' ordinal='2' />
+            <column datatype='integer' name='Income Ranking' ordinal='3' />
+            <column datatype='integer' name='Mean Income' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0jirz3w1rcfz5o10bjq3l1ufpsva' name='Rankings' table='[Rankings$]' type='table'>
+          <columns gridOrigin='A1:E51:no:A1:E51:0' header='yes' outcome='6'>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='integer' name='School Ranking' ordinal='1' />
+            <column datatype='integer' name='Mental Health Ranking' ordinal='2' />
+            <column datatype='integer' name='Income Ranking' ordinal='3' />
+            <column datatype='integer' name='Mean Income' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Rankings]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E51:no:A1:E51:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Rankings]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rankings_4ACF163A5A1949959054FC2C92DFFD53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>School Ranking</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[School Ranking]</local-name>
+            <parent-name>[Rankings]</parent-name>
+            <remote-alias>School Ranking</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rankings_4ACF163A5A1949959054FC2C92DFFD53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mental Health Ranking</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mental Health Ranking]</local-name>
+            <parent-name>[Rankings]</parent-name>
+            <remote-alias>Mental Health Ranking</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rankings_4ACF163A5A1949959054FC2C92DFFD53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income Ranking</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Income Ranking]</local-name>
+            <parent-name>[Rankings]</parent-name>
+            <remote-alias>Income Ranking</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rankings_4ACF163A5A1949959054FC2C92DFFD53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mean Income]</local-name>
+            <parent-name>[Rankings]</parent-name>
+            <remote-alias>Mean Income</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rankings_4ACF163A5A1949959054FC2C92DFFD53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Mental Health Ranking]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Rankings' datatype='table' name='[__tableau_internal_object_id__].[Rankings_4ACF163A5A1949959054FC2C92DFFD53]' role='measure' type='quantitative' />
+      <group caption='Top 10 States for Mental Health' name='[Top 10 States for Mental Health]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='[Parameters].[Parameter 1]' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='SUM([Mental Health Ranking])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <group caption='Bottom 10 States for Mental Health' name='[Top 5 States for Mental Health]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='[Parameters].[Parameter 1]' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='SUM([Mental Health Ranking])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kitty/AppData/Local/Temp/TableauTemp/#TableauTemp_1in9kve0ghzmry111j4jg0vtz93u.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/02/2024 09:39:38 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Rankings</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rankings_4ACF163A5A1949959054FC2C92DFFD53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>School Ranking</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[School Ranking]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>School Ranking</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Rankings</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rankings_4ACF163A5A1949959054FC2C92DFFD53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mental Health Ranking</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mental Health Ranking]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mental Health Ranking</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Rankings</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rankings_4ACF163A5A1949959054FC2C92DFFD53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income Ranking</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Income Ranking]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income Ranking</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Rankings</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rankings_4ACF163A5A1949959054FC2C92DFFD53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mean Income</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mean Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mean Income</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Rankings</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rankings_4ACF163A5A1949959054FC2C92DFFD53]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Top 10 states mental health' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+          <calculation class='tableau' formula='10' />
+          <range max='10' min='1' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Rankings' id='Rankings_4ACF163A5A1949959054FC2C92DFFD53'>
+            <properties context=''>
+              <relation connection='excel-direct.0jirz3w1rcfz5o10bjq3l1ufpsva' name='Rankings' table='[Rankings$]' type='table'>
+                <columns gridOrigin='A1:E51:no:A1:E51:0' header='yes' outcome='6'>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='integer' name='School Ranking' ordinal='1' />
+                  <column datatype='integer' name='Mental Health Ranking' ordinal='2' />
+                  <column datatype='integer' name='Income Ranking' ordinal='3' />
+                  <column datatype='integer' name='Mean Income' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Bottom 10 Mental Health Rankings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Rankings (Rankings)' name='federated.13bhkah0x05u38104fwzg17n0b3p' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Top 10 states mental health' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+              <calculation class='tableau' formula='10' />
+              <range max='10' min='1' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.13bhkah0x05u38104fwzg17n0b3p'>
+            <column datatype='integer' name='[Mental Health Ranking]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Top 5 States for Mental Health]' derivation='InOut' name='[io:Top 5 States for Mental Health:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mental Health Ranking]' derivation='Sum' name='[sum:Mental Health Ranking:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13bhkah0x05u38104fwzg17n0b3p].[io:Top 5 States for Mental Health:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[io:Top 5 States for Mental Health:nk]' />
+              <groupfilter function='member' level='[io:Top 5 States for Mental Health:nk]' member='false' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk]' direction='DESC' using='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:Mental Health Ranking:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.13bhkah0x05u38104fwzg17n0b3p].[io:Top 5 States for Mental Health:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:Mental Health Ranking:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.13bhkah0x05u38104fwzg17n0b3p].[io:Top 5 States for Mental Health:nk] / [federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{00AF54C1-244C-4BB8-9950-E9AD1AA6B662}' />
+    </worksheet>
+    <worksheet name='Mean Income'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Rankings (Rankings)' name='federated.13bhkah0x05u38104fwzg17n0b3p' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.13bhkah0x05u38104fwzg17n0b3p'>
+            <column datatype='integer' name='[Mean Income]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mean Income]' derivation='Sum' name='[sum:Mean Income:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:State:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;Alaska&quot;' />
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;Hawaii&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:Mean Income:qk]' num-steps='9' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:Mean Income:qk]' />
+              <text column='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:Mean Income:qk]' />
+              <lod column='[federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk]' />
+              <geometry column='[federated.13bhkah0x05u38104fwzg17n0b3p].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='198' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.49375692009925842' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13bhkah0x05u38104fwzg17n0b3p].[Latitude (generated)]</rows>
+        <cols>[federated.13bhkah0x05u38104fwzg17n0b3p].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{7D87A177-014B-42F3-9DDE-5B4E36090237}' />
+    </worksheet>
+    <worksheet name='Mental Health Ranking'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Rankings (Rankings)' name='federated.13bhkah0x05u38104fwzg17n0b3p' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.13bhkah0x05u38104fwzg17n0b3p'>
+            <column datatype='integer' name='[Mental Health Ranking]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mental Health Ranking]' derivation='Sum' name='[sum:Mental Health Ranking:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:State:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;Alaska&quot;' />
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;Hawaii&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:Mental Health Ranking:qk]' num-steps='9' palette='orange_gold_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:Mental Health Ranking:qk]' />
+              <lod column='[federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk]' />
+              <color column='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:Mental Health Ranking:qk]' />
+              <geometry column='[federated.13bhkah0x05u38104fwzg17n0b3p].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.42779004573822021' />
+                <format attr='mark-transparency' value='198' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13bhkah0x05u38104fwzg17n0b3p].[Latitude (generated)]</rows>
+        <cols>[federated.13bhkah0x05u38104fwzg17n0b3p].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{B75CDBDD-F8F7-448B-9F12-F8832A2CFC05}' />
+    </worksheet>
+    <worksheet name='School Quality Ranking'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Rankings (Rankings)' name='federated.13bhkah0x05u38104fwzg17n0b3p' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.13bhkah0x05u38104fwzg17n0b3p'>
+            <column datatype='integer' name='[School Ranking]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[School Ranking]' derivation='Sum' name='[sum:School Ranking:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:State:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;Alaska&quot;' />
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;Hawaii&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:School Ranking:qk]' num-steps='9' palette='green_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:School Ranking:qk]' />
+              <text column='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:School Ranking:qk]' />
+              <lod column='[federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk]' />
+              <geometry column='[federated.13bhkah0x05u38104fwzg17n0b3p].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='198' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.49375692009925842' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13bhkah0x05u38104fwzg17n0b3p].[Latitude (generated)]</rows>
+        <cols>[federated.13bhkah0x05u38104fwzg17n0b3p].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{A1D8802E-E521-4CE7-8AA1-E5D6FEA68E32}' />
+    </worksheet>
+    <worksheet name='Top 10 Mental Health Rankings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>&lt;Sheet Name&gt;</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Rankings (Rankings)' name='federated.13bhkah0x05u38104fwzg17n0b3p' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Top 10 states mental health' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='10'>
+              <calculation class='tableau' formula='10' />
+              <range max='10' min='1' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.13bhkah0x05u38104fwzg17n0b3p'>
+            <column datatype='integer' name='[Mental Health Ranking]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Top 10 States for Mental Health]' derivation='InOut' name='[io:Top 10 States for Mental Health:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mental Health Ranking]' derivation='Sum' name='[sum:Mental Health Ranking:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13bhkah0x05u38104fwzg17n0b3p].[io:Top 10 States for Mental Health:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[io:Top 10 States for Mental Health:nk]' />
+              <groupfilter function='member' level='[io:Top 10 States for Mental Health:nk]' member='false' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk]' direction='ASC' using='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:Mental Health Ranking:qk]' />
+          <slices>
+            <column>[federated.13bhkah0x05u38104fwzg17n0b3p].[io:Top 10 States for Mental Health:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.13bhkah0x05u38104fwzg17n0b3p].[io:Top 10 States for Mental Health:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:Mental Health Ranking:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.13bhkah0x05u38104fwzg17n0b3p].[io:Top 10 States for Mental Health:nk] / [federated.13bhkah0x05u38104fwzg17n0b3p].[none:State:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{AFBA2A6A-49ED-4EF0-A841-2FB164CAAD95}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97064' id='12' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1468'>
+            <zone h='97064' id='10' type-v2='layout-basic' w='72923' x='1231' y='1468' />
+            <zone fixed-size='160' h='97064' id='11' is-fixed='true' param='vert' type-v2='layout-flow' w='24615' x='74154' y='1468' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='53945' id='1' name='School Quality Ranking' w='62154' x='1231' y='183' />
+        <zone h='43303' id='3' name='Mean Income' w='60615' x='1538' y='58165' />
+        <zone h='55229' id='5' name='Top 10 Mental Health Rankings' w='31077' x='64000' y='183' />
+        <zone h='49541' id='6' name='Bottom 10 Mental Health Rankings' w='33846' x='63846' y='50826' />
+        <zone forceUpdate='true' h='17798' id='13' type-v2='text' w='62615' x='1538' y='44037'>
+          <formatted-text>
+            <run fontname='Times New Roman'>Glancing over the 2 maps, there seems to be some correlation between School Quality and Mean Income.  States in the Northeast, in particular, seem to show positive correlation between higher income and better quality schools.  Intuitively, higher income translates to more school funding from taxes, which in turn leads to better quality.  Although, negative correlation exists as well (i.e. CA and WY).</run>
+          </formatted-text>
+        </zone>
+        <zone h='58899' id='14' type-v2='text' w='10308' x='89692' y='24037'>
+          <formatted-text>
+            <run fontname='Times New Roman'>Top 10 states for mental health seem to have good school rankings, whereas bottom 10 states for mental health seem to congregate in the middle of the country, where many of the lower mean income states are.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97064' id='17' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1468'>
+                <zone fixed-size='280' h='53945' id='1' is-fixed='true' name='School Quality Ranking' w='62154' x='1231' y='183'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55229' id='5' is-fixed='true' name='Top 10 Mental Health Rankings' w='31077' x='64000' y='183'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='58899' id='14' type-v2='text' w='10308' x='89692' y='24037'>
+                  <formatted-text>
+                    <run fontname='Times New Roman'>Top 10 states for mental health seem to have good school rankings, whereas bottom 10 states for mental health seem to congregate in the middle of the country, where many of the lower mean income states are.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='17798' id='13' type-v2='text' w='62615' x='1538' y='44037'>
+                  <formatted-text>
+                    <run fontname='Times New Roman'>Glancing over the 2 maps, there seems to be some correlation between School Quality and Mean Income.  States in the Northeast, in particular, seem to show positive correlation between higher income and better quality schools.  Intuitively, higher income translates to more school funding from taxes, which in turn leads to better quality.  Although, negative correlation exists as well (i.e. CA and WY).</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49541' id='6' is-fixed='true' name='Bottom 10 Mental Health Rankings' w='33846' x='63846' y='50826'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43303' id='3' is-fixed='true' name='Mean Income' w='60615' x='1538' y='58165'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A7349683-B6F9-4764-A629-ACE24882F38D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Mental Health Ranking'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:Mental Health Ranking:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8415DB83-DAE8-434F-B67A-C961CE1AF45D}' />
+    </window>
+    <window class='worksheet' name='School Quality Ranking'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:School Ranking:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EB1E4DCB-EAF3-4E0A-8ED6-F09A00A84A05}' />
+    </window>
+    <window class='worksheet' name='Mean Income'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13bhkah0x05u38104fwzg17n0b3p].[sum:Mean Income:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8AA9E7E0-63EC-4A29-985E-4EF24212CEC0}' />
+    </window>
+    <window class='worksheet' name='Bottom 10 Mental Health Rankings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{75F4309F-65B4-4FB9-B921-58BFB70A5C18}' />
+    </window>
+    <window class='worksheet' name='Top 10 Mental Health Rankings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{13E330ED-FA3D-4860-A4EB-AB0821F4A33C}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Bottom 10 Mental Health Rankings' />
+        <viewpoint name='Mean Income'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='School Quality Ranking'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Mental Health Rankings' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5A3BD4DE-3C95-46D7-BBFC-E055E6178C2A}' />
+    </window>
+  </windows>
+</workbook>

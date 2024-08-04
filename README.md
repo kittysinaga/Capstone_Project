@@ -1,28 +1,28 @@
-#OVERVIEW
-###The project is my capstone project for CODE:You. The project analyzes 3 socioeconomic factors across 50 US states, school quality, mean income, and mental health, in year 2023.  The objective is to deduce rankings of those factors, to help determine which areas are most attractive to live in.
+# OVERVIEW
+### The project is my capstone project for CODE:You. The project analyzes 3 socioeconomic factors across 50 US states, school quality, mean income, and mental health, in year 2023.  The objective is to deduce rankings of those factors, to help determine which areas are most attractive to live in.
 
-#DATA
-###The dataset used in this project contains information about school quality, school safety, income by occupation, mental health indicators (i.e. depressive and anxiety factors) across all 50 states and District of Columbia.
+# DATA
+### The dataset used in this project contains information about school quality, school safety, income by occupation, mental health indicators (i.e. depressive and anxiety factors) across all 50 states and District of Columbia.
 
-##Data 1 - Schools - https://scholaroo.com/report/state-education-rankings/ 
-###This dataset already has the schools ranked based on Student Success, Student Safety, and School Quality variables for year 2023.
+## Data 1 - Schools - https://scholaroo.com/report/state-education-rankings/ 
+### This dataset already has the schools ranked based on Student Success, Student Safety, and School Quality variables for year 2023.
 
-##Data 2 - Income - https://www.cnbc.com/2024/04/14/median-annual-income-in-every-us-state.html
-###This dataset lists income levels in 2023 for various areas in the States based on different occupations.
+## Data 2 - Income - https://www.cnbc.com/2024/04/14/median-annual-income-in-every-us-state.html
+### This dataset lists income levels in 2023 for various areas in the States based on different occupations.
 
-##Data 3 - Mental Health - https://www.cdc.gov/nchs/covid19/pulse/mental-health-care.htm
-###This dataset utilizes survey results from various households throughout the US, focusing on depressive and anxiety indicators.  Surveys were done over the course of several years, including year 2023.
+## Data 3 - Mental Health - https://www.cdc.gov/nchs/covid19/pulse/mental-health-care.htm
+### This dataset utilizes survey results from various households throughout the US, focusing on depressive and anxiety indicators.  Surveys were done over the course of several years, including year 2023.
 
-#PROJECT STRUCTURE
-##The project is organized as follows:
+# PROJECT STRUCTURE
+## The project is organized as follows:
 
-###Data Exploration: Jupyter notebooks or scripts to explore the dataset.
+### Data Exploration: Jupyter notebooks or scripts to explore the dataset.
 
-###Analysis: Using Python with the Pandas package to clean the data.
+### Analysis: Using Python with the Pandas package to clean the data.
 
-###Visualizations :  Tableau dashboard
+### Visualizations :  Tableau dashboard
 
-#FEATURES
+# FEATURES
 | Feature |	Description |
 |---------| ----------- |
 | Read TWO data files |	Used 3 CSV files from kaggle and online sources |

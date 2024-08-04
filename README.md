@@ -39,7 +39,7 @@ Install the necessary dependencies: pip install -r requirements.txt
 Explore the Jupyter notebooks or scripts in the respective folders
 
 ## Dependencies
-List any dependencies or libraries used in the project.
+All dependencies or libraries are contained in requirements.txt file
 
 ## Virtual Environment Instructions
 1. After you have cloned the repo to your machine, navigate to the project folder in GitBash/Terminal.

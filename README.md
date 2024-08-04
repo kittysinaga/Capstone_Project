@@ -34,9 +34,9 @@ Visualizations :  Tableau dashboard
 ## Getting Started
 To run this project, follow these steps:
 
-Clone the repository: git clone https://github.com/kittysinaga/Capstone_Project
-Install the necessary dependencies: pip install -r requirements.txt
-Explore the Jupyter notebooks or scripts in the respective folders
+1. Clone the repository: git clone https://github.com/kittysinaga/Capstone_Project
+2. Install the necessary dependencies: pip install -r requirements.txt
+3. Explore the Jupyter notebooks or scripts in the respective folders
 
 ## Dependencies
 All dependencies or libraries are contained in requirements.txt file

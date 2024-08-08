@@ -38,21 +38,20 @@ To run this project, follow these steps:
 2. Install the necessary dependencies: pip install -r requirements.txt
 3. Explore the Jupyter notebooks or scripts in the respective folders
 
-## Dependencies
-All dependencies or libraries are contained in requirements.txt file
-
 ## Virtual Environment Instructions
 1. After you have cloned the repo to your machine, navigate to the project folder in GitBash/Terminal.
-2. Create a virtual environment in the project folder.
+2. Create a virtual environment (as per instructions below, in the next section).
 3. Activate the virtual environment.
-4. Install the required packages.
+4. Install the required packages, within the terminal.
 5. When you are done working on your repo, deactivate the virtual environment.
 
 Virtual Environment Commands
 
-| Command |	Linux/Mac |	GitBash |
+| Command |	Linux/Mac |	Windows |
 | -------- | --------- | -------- |
 | Create |	python3 -m venv venv |	python -m venv venv |
 | Activate | source venv/bin/activate |	source venv/Scripts/activate |
 | Install |	pip install -r requirements.txt |	pip install -r requirements.txt |
 | Deactivate |	deactivate |	deactivate |
+
+ 
